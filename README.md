@@ -1,6 +1,6 @@
 # Honeycomb Solver
 
-Solves honeycomb word puzzles.
+Solves honeycomb word puzzles
 
 Rules: 
 -	Words must contain at least 4 letters
