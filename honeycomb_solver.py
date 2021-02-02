@@ -2,14 +2,25 @@ import sys
 
 
 class HoneycombSolver:
+    """Solves honeycomb word puzzles.
+    
+    Attributes:
+        required_char: A string containing the required center character.
+        valid_chars: A string containing the remaining valid characters.
+        wordlist: A string containing the path to a wordlist text file.
+    """
+    
     MIN_WORD_LENGTH = 4
 
     def __init__(self, required_char, valid_chars, wordlist):
+        """Init HoneycombSolver"""
         self.required_char = required_char.lower()
         self.valid_chars = set(valid_chars.lower())
         self.wordlist = wordlist
 
     def solve(self):
+        """Checks each line of the wordlist for required_char and valid_chars"""
+        
         matches = []
 
         with open(self.wordlist, 'r') as lines:
