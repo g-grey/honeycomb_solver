@@ -29,7 +29,7 @@ Example:
 
 `python honeycomb_solver.py r ahvcli`
 
-Or optionally provide your own world list
+Or optionally provide your own world list:
 
 `python honeycomb_solver.py r ahvcli your_word_list.txt`
  
